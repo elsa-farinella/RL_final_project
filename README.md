@@ -29,14 +29,16 @@ This repository contains everything you need to reproduce the experiments from o
    • Builds a preference file (prompt, preferred answer, less‑preferred answer).
    
    • Fine‑tunes GPT‑2‑Large with two methods:
+   
    – PPO‑style RLHF   → checkpoints/ppo\_\*
+   
    – Direct Preference Optimisation (DPO) → checkpoints/dpo\_\*
    
    • Logs BLEU, ROUGE, BERTScore and reward curves to Weights & Biases.
    
    • Includes an optional RAG prototype that learns when to fetch external info.
 
-2. GETTING STARTED
+3. GETTING STARTED
     
    a. Clone:   git clone [https://github.com/elsa-farinella/RL\_final\_project.git](https://github.com/elsa-farinella/RL_final_project.git)
    cd RL\_final\_project
@@ -49,7 +51,7 @@ This repository contains everything you need to reproduce the experiments from o
    
    d. Data :   open notebooks/build\_dataset.ipynb and run all cells.
 
-3. FOLDER GUIDE
+4. FOLDER GUIDE
     
    data/        – raw & processed datasets 
    
@@ -59,7 +61,7 @@ This repository contains everything you need to reproduce the experiments from o
    
    checkpoints/ – saved models (created after training)
 
-4. TYPICAL WORKFLOW
+5. TYPICAL WORKFLOW
 
     1. Run build\_dataset.ipynb    → data/dpo\_dataset\_RL.json
        
@@ -72,7 +74,7 @@ This repository contains everything you need to reproduce the experiments from o
     Headless servers can execute notebooks with:
     jupyter nbconvert --to notebook --execute <notebook>.ipynb
 
-5. WHERE TO FIND RESULTS
+6. WHERE TO FIND RESULTS
     
     • Metric tables appear at the end of each notebook.
    
