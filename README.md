@@ -21,9 +21,9 @@ This repository contains everything you need to reproduce the experiments from o
 
 5. Where to find results
 
-6. Citation & licence
+---------------------------------------------------
 
-7. WHAT THE PROJECT DOES
+1. WHAT THE PROJECT DOES
    • Curates a specialist Q\&A dataset on heat‑pump technology.
    
    • Builds a preference file (prompt, preferred answer, less‑preferred answer).
@@ -36,7 +36,7 @@ This repository contains everything you need to reproduce the experiments from o
    
    • Includes an optional RAG prototype that learns when to fetch external info.
 
-9. GETTING STARTED
+2. GETTING STARTED
     
    a. Clone:   git clone [https://github.com/elsa-farinella/RL\_final\_project.git](https://github.com/elsa-farinella/RL_final_project.git)
    cd RL\_final\_project
@@ -49,31 +49,34 @@ This repository contains everything you need to reproduce the experiments from o
    
    d. Data :   open notebooks/build\_dataset.ipynb and run all cells.
 
-11. FOLDER GUIDE
-   data/        – raw & processed datasets \\
-   notebooks/   – build\_dataset, PPO‑1, DPO, RL‑Optimization \\
+3. FOLDER GUIDE
+    
+   data/        – raw & processed datasets 
+   
+   notebooks/   – build\_dataset, PPO‑1, DPO, RL‑Optimization 
+   
    answers/     – model outputs for the test set
+   
    checkpoints/ – saved models (created after training)
 
-13. TYPICAL WORKFLOW
+4. TYPICAL WORKFLOW
 
     1. Run build\_dataset.ipynb    → data/dpo\_dataset\_RL.json
+       
     2. Run PPO‑1.ipynb            → checkpoints/ppo\_\*  + answers/ppo\_\*.json
+   
     3. Run DPO.ipynb              → checkpoints/dpo\_\*  + answers/dpo\_\*.json
+   
     4. Run RL‑Optimization.ipynb  to reproduce sweeps or tweak hyper‑params.
 
     Headless servers can execute notebooks with:
     jupyter nbconvert --to notebook --execute <notebook>.ipynb
 
-14. WHERE TO FIND RESULTS
+5. WHERE TO FIND RESULTS
+    
     • Metric tables appear at the end of each notebook.
+   
     • Weights & Biases project: rl\_final\_project/\*
+   
     • Best model: checkpoints/dpo\_final (see README inside that folder).
 
-15. CITATION & LICENCE
-    If this work helps you, please cite:
-    Farinella E., Faro R., Scialanga M. 2025.
-    "Towards a Factual Heat‑Pump Chatbot with RLHF & DPO".
-    [https://github.com/elsa-farinella/RL\_final\_project](https://github.com/elsa-farinella/RL_final_project)
-
-    Code and data are released under the MIT Licence.
