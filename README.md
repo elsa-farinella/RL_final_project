@@ -37,6 +37,7 @@ This repository contains everything you need to reproduce the experiments from o
    • Includes an optional RAG prototype that learns when to fetch external info.
 
 9. GETTING STARTED
+    
    a. Clone:   git clone [https://github.com/elsa-farinella/RL\_final\_project.git](https://github.com/elsa-farinella/RL_final_project.git)
    cd RL\_final\_project
    
